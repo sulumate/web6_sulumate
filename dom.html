@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editing the collection | Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">Field Notes</a>
+      <nav aria-label="Assignment parts">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html" aria-current="page">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="guide.html">Field guide</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="label">JQUERY LAB / PART 03</p>
+      <h1>Editing the collection</h1>
+      <p>Edit the list, switch specimen attributes and preview a collector form.</p>
+    </div>
+    <section class="sheet">
+      <p class="label">Task 5</p>
+      <h2>Specimen list</h2>
+      <label for="item-name">Specimen name</label>
+      <input id="item-name" type="text" value="Wild mint">
+      <div class="controls">
+        <button id="append-item">Add item at end</button>
+        <button id="prepend-item">Add item at start</button>
+        <button id="remove-item">Remove last item</button>
+      </div>
+      <ul id="specimens"><li>Fern</li><li>Poppy</li></ul>
+    </section>
+    <section class="sheet spread">
+      <div>
+        <p class="label">Task 6</p>
+        <h2>Specimen attributes</h2>
+        <p><a id="reference" href="https://en.wikipedia.org/wiki/Fern">Read about ferns</a></p>
+        <div class="controls">
+          <button id="change-image">Switch image</button>
+          <button id="change-link">Switch reference link</button>
+        </div>
+      </div>
+      <img id="specimen-image" src="assets/fern.svg" alt="Common polypody fern">
+    </section>
+    <section class="sheet">
+      <p class="label">Task 7</p>
+      <h2>Collector card</h2>
+      <form id="collector-form">
+        <label for="collector-name">Name</label>
+        <input id="collector-name" type="text" autocomplete="name">
+        <label for="collector-email">Email</label>
+        <input id="collector-email" type="email" autocomplete="email">
+      </form>
+      <div class="note">
+        <strong>Live preview</strong>
+        <p>Name: <span id="preview-name">—</span></p>
+        <p>Email: <span id="preview-email">—</span></p>
+      </div>
+    </section>
+  </main>
+  <footer>Assignment 6 <span>Sulukhan Aizharykova · SE-2529</span></footer>
+</body>
+</html>

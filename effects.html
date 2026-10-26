@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visibility and effects | Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">Field Notes</a>
+      <nav aria-label="Assignment parts">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html" aria-current="page">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="guide.html">Field guide</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="label">JQUERY LAB / PART 02</p>
+      <h1>Visibility and effects</h1>
+      <p>Hide a note, fade a specimen and slide a panel open.</p>
+    </div>
+    <section class="sheet">
+      <p class="label">Task 2</p>
+      <h2>Visibility</h2>
+      <div class="controls">
+        <button id="hide-note">Hide</button>
+        <button id="show-note">Show</button>
+        <button id="toggle-note">Toggle</button>
+      </div>
+      <p class="note" id="field-note">The fern was growing in the shade of a stone wall.</p>
+    </section>
+    <section class="sheet spread">
+      <div>
+        <p class="label">Task 3</p>
+        <h2>Fade a specimen</h2>
+        <div class="controls">
+          <button id="fade-out">Fade out</button>
+          <button id="fade-in">Fade in</button>
+          <button id="fade-toggle">Fade toggle</button>
+        </div>
+      </div>
+      <div class="plate-slot"><img id="fade-image" src="assets/poppy.svg" alt="Illustration of a red common poppy"></div>
+    </section>
+    <section class="sheet">
+      <p class="label">Task 4</p>
+      <h2>Slide a field note</h2>
+      <div class="controls">
+        <button id="slide-up">Slide up</button>
+        <button id="slide-down">Slide down</button>
+        <button id="slide-toggle">Slide toggle</button>
+      </div>
+      <div class="note" id="slide-panel">Look closely at the fern. Smaller leaflets grow on both sides of the central stalk.</div>
+    </section>
+  </main>
+  <footer>Assignment 6 <span>Sulukhan Aizharykova · SE-2529</span></footer>
+</body>
+</html>

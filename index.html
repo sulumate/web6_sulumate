@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting started | Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">Field Notes</a>
+      <nav aria-label="Assignment parts">
+        <a href="index.html" aria-current="page">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="guide.html">Field guide</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="label">JQUERY LAB / PART 01</p>
+      <h1>Getting started</h1>
+      <p>Select an element by ID, class or tag, then change the specimen entry.</p>
+    </div>
+    <section class="sheet spread">
+      <figure>
+        <img src="assets/fern.svg" alt="A pressed fern frond illustrated on specimen paper">
+        <figcaption>Plate 01 · Common polypody</figcaption>
+      </figure>
+      <div>
+        <p class="label">Task 1 · Selectors and CSS</p>
+        <h2 id="entry-title">Unlabelled fern</h2>
+        <p class="entry-note">This specimen is waiting for its label.</p>
+        <small id="catalog-status">Draft entry</small>
+        <div class="controls"><button id="label-entry">Label specimen</button></div>
+      </div>
+    </section>
+    <section class="sheet">
+      <p class="label">Task 1 · Text color</p>
+      <h2>Color a paragraph</h2>
+      <p id="color-paragraph">A poppy grows beside the garden path.</p>
+      <label for="color-input">Color</label>
+      <input id="color-input" type="text" placeholder="red or #2563eb" aria-describedby="color-error">
+      <div class="controls"><button id="apply-color">Apply</button></div>
+      <p id="color-error" role="status"></p>
+    </section>
+    <section class="setup">
+      <h2>Task 0 · Setup</h2>
+      <p>Open the browser console to see <code>jQuery is ready!</code></p>
+    </section>
+  </main>
+  <footer>Assignment 6 <span>Sulukhan Aizharykova · SE-2529</span></footer>
+</body>
+</html>
