@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #25382e;
+  background: #f6f4eb;
+  --green: #315844;
+  --line: #ccd0bf;
+  --paper: #fcfbf4;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { border-bottom: 1px solid var(--line); }
+.bar, main, footer { width: min(960px, calc(100% - 40px)); margin: auto; }
+.bar, nav, .controls, footer { display: flex; align-items: center; flex-wrap: wrap; }
+.bar { justify-content: space-between; padding: 18px 0; gap: 12px 26px; }
+.brand, h1, h2, h3, .guide-button { font-family: Georgia, serif; font-weight: normal; }
+.brand { font-size: 25px; font-style: italic; text-decoration: none; }
+a { color: var(--green); text-underline-offset: 4px; }
+nav { gap: 4px; }
+nav a { color: inherit; font-size: 14px; padding: 8px 12px; text-decoration: none; border-radius: 4px; }
+nav a:hover { background: #e7ebdf; }
+nav a[aria-current="page"], button { color: white; background: var(--green); }
+main { padding-bottom: 32px; }
+.intro { padding: 40px 0 25px; }
+.intro > p:last-child { color: #526057; margin-bottom: 0; }
+.label, figcaption, small, footer { font-family: "Courier New", monospace; }
+.label { margin: 0 0 10px; color: #596d5c; font-size: 12px; font-weight: bold; letter-spacing: .09em; text-transform: uppercase; }
+h1 { font-size: clamp(40px, 7vw, 68px); letter-spacing: -.05em; line-height: 1.04; margin: 0; }
+h2 { font-size: clamp(25px, 4vw, 34px); line-height: 1.14; margin: 0 0 12px; }
+p, li { line-height: 1.55; }
+.sheet { padding: clamp(20px, 4vw, 34px); margin-bottom: 16px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); }
+.spread, .motion { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(20px, 5vw, 48px); }
+figure { margin: 0; }
+img { display: block; width: 100%; border-radius: 3px; }
+figcaption, small { display: block; margin-top: 8px; font-size: 12px; }
+.setup { padding: 10px 0; }
+.setup h2 { font-size: 23px; }
+.controls { gap: 8px; margin: 16px 0 0; }
+button, input { font: inherit; }
+button { cursor: pointer; padding: 10px 14px; border: 1px solid var(--green); border-radius: 4px; font-size: 14px; }
+button:hover { background: #213f30; }
+button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 3px solid #a14c30; outline-offset: 3px; }
+button:focus:not(:focus-visible) { outline: none; }
+label { display: block; margin: 14px 0 5px; font-size: 14px; font-weight: 600; }
+input { width: min(100%, 340px); padding: 9px 11px; background: white; color: inherit; border: 1px solid #879783; border-radius: 4px; }
+.note { margin: 18px 0 0; padding: 15px 18px; background: #eaf0e4; border-left: 3px solid #789271; }
+.note p { margin: 5px 0; overflow-wrap: anywhere; }
+#specimens { padding-left: 22px; overflow-wrap: anywhere; }
+#color-error { color: #934430; margin-bottom: 0; }
+#color-error:empty { margin: 0; }
+.plate-slot { aspect-ratio: 460 / 294; }
+.track { position: relative; height: 155px; border: 1px solid var(--line); border-radius: 4px; background: repeating-linear-gradient(90deg, #e9eedf 0 23px, #d7dfcc 23px 24px); }
+.box { position: absolute; top: 12px; left: 12px; width: 38px; height: 38px; background: #a95138; border-radius: 3px; }
+.guide-entry { border-top: 1px solid var(--line); }
+.guide-entry:last-child { border-bottom: 1px solid var(--line); }
+.guide-entry h3 { margin: 0; }
+.guide-button { width: 100%; display: flex; justify-content: space-between; align-items: center; text-align: left; font-size: 23px; color: inherit; background: transparent; border: 0; padding: 16px 2px; }
+.guide-button:hover { background: #edf1e5; }
+.guide-button::after { content: "+"; font-family: sans-serif; }
+.guide-button[aria-expanded="true"]::after { content: "−"; }
+.guide-panel { padding: 0 22px 14px 2px; }
+.guide-panel p { margin: 0 0 8px; }
+.closed { display: none; }
+footer { justify-content: space-between; gap: 8px; padding: 18px 0 28px; border-top: 1px solid var(--line); font-size: 12px; }
+@media (max-width: 680px) {
+  .spread, .motion { grid-template-columns: 1fr; }
+  .intro { padding-top: 28px; }
+  nav a { padding: 7px 8px; }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 294" role="img" aria-labelledby="title">
+  <title id="title">Poppy specimen on gridded herbarium paper</title>
+  <defs>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#bcc3a7" stroke-width=".65"/></pattern>
+  </defs>
+  <rect width="460" height="294" fill="#e7e9d8"/>
+  <rect x="11" y="11" width="438" height="272" fill="url(#grid)" stroke="#a7b094"/>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#536f51" stroke-width="3">
+      <path d="M185 264Q212 196 236 89M205 207Q202 153 168 141M223 141Q270 128 287 92"/>
+    </g>
+    <g fill="#697c5b">
+      <path d="M207 197q-16-27-48-36l11 12-17-3 17 11-4 3 24 3z"/>
+      <path d="M214 174q13-21 40-31l-9 12 15-4-13 9 4 1-18 7z"/>
+      <ellipse cx="166" cy="140" rx="10" ry="17" transform="rotate(-43 166 140)"/>
+      <ellipse cx="288" cy="91" rx="10" ry="16" transform="rotate(20 288 91)"/>
+    </g>
+    <g stroke="#a44835" stroke-width="1.5">
+      <path d="M236 90C211 88 174 58 185 40c9-14 25 2 31-5 16-17 32 16 20 55z" fill="#ca6851"/>
+      <path d="M233 91c-13-31-13-58 5-66 10-5 16 7 23 4 20-8 27 26 10 44z" fill="#da7a5d"/>
+      <path d="M235 92c1-24 34-56 51-48 7 3 4 12 8 19 9 20-20 43-59 29z" fill="#c8644d"/>
+      <path d="M237 91c-17-20-46-35-59-23-11 10 6 35 22 38 21 4 30-1 37-15z" fill="#e28a67"/>
+    </g>
+    <g fill="none" stroke="#a34b37" stroke-width="1.15">
+      <path d="M227 83q-11-27-28-38m31 38q-4-35 8-51m1 50q17-27 35-32m-47 40q-23-15-40-13m57 9q23-14 42-20"/>
+    </g>
+    <ellipse cx="236" cy="90" rx="12" ry="7" fill="#3e4835"/>
+    <circle cx="235" cy="88" r="4" fill="#9da175"/>
+  </g>
+  <g fill="#2b4939" font-family="Georgia, serif">
+    <text x="28" y="38" font-size="12" letter-spacing="2">FIG. 02</text>
+    <text x="428" y="263" font-size="18" text-anchor="end" font-style="italic">Papaver rhoeas</text>
+  </g>
+  <path d="M30 250v7m8-4v4m8-4v4m8-7v7m8-4v4m8-4v4m8-7v7H30" fill="none" stroke="#68755d"/>
+</svg>

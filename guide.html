@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pocket field guide | Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">Field Notes</a>
+      <nav aria-label="Assignment parts">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="guide.html" aria-current="page">Field guide</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="label">JQUERY LAB / PART 05</p>
+      <h1>Pocket field guide</h1>
+      <p>Open a specimen to read its field notes.</p>
+    </div>
+    <section class="sheet">
+      <p class="label">Task 11 · Accordion</p>
+      <h2>Specimen index</h2>
+      <div class="guide-entry">
+        <h3><button class="guide-button" id="plant-1" aria-expanded="true" aria-controls="note-1">Common polypody</button></h3>
+        <div class="guide-panel" id="note-1" role="region" aria-labelledby="plant-1">
+          <p><em>Polypodium vulgare</em></p>
+          <p>Turn over a mature frond. Two rows of round spore clusters line each leaflet.</p>
+        </div>
+      </div>
+      <div class="guide-entry">
+        <h3><button class="guide-button" id="plant-2" aria-expanded="false" aria-controls="note-2">Common poppy</button></h3>
+        <div class="guide-panel closed" id="note-2" role="region" aria-labelledby="plant-2">
+          <p><em>Papaver rhoeas</em></p>
+          <p>Look for four crumpled red petals around a dark centre. The unopened buds nod toward the ground.</p>
+        </div>
+      </div>
+      <div class="guide-entry">
+        <h3><button class="guide-button" id="plant-3" aria-expanded="false" aria-controls="note-3">Wild mint</button></h3>
+        <div class="guide-panel closed" id="note-3" role="region" aria-labelledby="plant-3">
+          <p><em>Mentha arvensis</em></p>
+          <p>Look for opposite leaves on a square stem and small flowers clustered around the upper leaves.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>Assignment 6 <span>Sulukhan Aizharykova · SE-2529</span></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion studies | Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">Field Notes</a>
+      <nav aria-label="Assignment parts">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html" aria-current="page">Animations</a>
+        <a href="guide.html">Field guide</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="label">JQUERY LAB / PART 04</p>
+      <h1>Motion studies</h1>
+      <p>Run each animation to see which properties of the square change.</p>
+    </div>
+    <section class="sheet motion">
+      <div>
+        <p class="label">Task 8</p>
+        <h2>Grow and move</h2>
+        <p>The square grows as it moves to the right.</p>
+        <button id="run-basic" aria-controls="basic-box">Run basic animation</button>
+      </div>
+      <div class="track"><div id="basic-box" class="box"></div></div>
+    </section>
+    <section class="sheet motion">
+      <div>
+        <p class="label">Task 9</p>
+        <h2>Four-step sequence</h2>
+        <p>Right, down, shrink, then return to the starting size and position.</p>
+        <button id="run-sequence" aria-controls="sequence-box">Run sequence</button>
+      </div>
+      <div class="track"><div id="sequence-box" class="box"></div></div>
+    </section>
+    <section class="sheet motion">
+      <div>
+        <p class="label">Task 10</p>
+        <h2>Combined properties</h2>
+        <p>Position, size and opacity change together.</p>
+        <button id="run-combined" aria-controls="combined-box">Run combined animation</button>
+      </div>
+      <div class="track"><div id="combined-box" class="box"></div></div>
+    </section>
+  </main>
+  <footer>Assignment 6 <span>Sulukhan Aizharykova · SE-2529</span></footer>
+</body>
+</html>
